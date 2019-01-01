@@ -41,8 +41,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.275,
-      "y": 0.275,
+      "x": 0.1875,
+      "y": 0.1875,
       "z": 1
     },
     "_quat": {
@@ -86,9 +86,6 @@
     "_components": [
       {
         "__id__": 98
-      },
-      {
-        "__id__": 99
       }
     ],
     "_prefab": null,
@@ -4489,36 +4486,5 @@
     "_fitWidth": true,
     "_fitHeight": false,
     "_id": "c6k8Ho/1NMmbHNSe/519ud"
-  },
-  {
-    "__type__": "05f60J2+LZIpqdGqnbdcX2d",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 2
-    },
-    "_enabled": true,
-    "head_sp": {
-      "__id__": 38
-    },
-    "name_label": {
-      "__id__": 46
-    },
-    "id_label": {
-      "__id__": 48
-    },
-    "money_num_label": {
-      "__id__": 51
-    },
-    "scroll_view": {
-      "__id__": 12
-    },
-    "scroll_content": {
-      "__id__": 13
-    },
-    "game_item": {
-      "__id__": 20
-    },
-    "_id": "65PnD6hJ5D2J46bnY0FaJW"
   }
 ]
