@@ -1,0 +1,42 @@
+server:
+  port: 8088
+
+server.servlet.context-path : /chessgame
+
+logging:
+  config: classpath:logback-dev.xml
+
+mybatis:
+  mapper-location: classpath*:com/chessgame/dal/dao/*.xml
+  type-aliases-package: com.chessgame.dal.entity
+
+spring:
+   datasource:
+       type: com.alibaba.druid.pool.DruidDataSource
+       driver-class-name: com.mysql.jdbc.Driver
+       url: jdbc:mysql://localhost:3306/chessgame_db?useUnicode=true&characterEncoding=utf-8
+       username: root
+       password: root
+       druid:
+          #初始化建立物理连接的个数
+          initial-size: 10
+          #最小连接池数量
+          min-idle: 5
+          #最大连接池数量
+          max-active: 2000
+          #获取连接时最长的等待时间
+          max-wait: 3000
+          #有两个含义 1.Destroy 线程会检测连接的时间 2.testWhileIdle的判断依据
+          timeBetweenEvictionRunsMillis: 60000
+          #Destory线程中如果检测到当前连接的最后活跃时间和当前时间的差值大于minEvictableIdleTimeMillis，则关闭当前连接
+          minEvictableIdleTimeMillis: 300000
+          #用来检测连接是否的sql，要求是一个查询语句。在mysql中通常设置为SELECT 'X'
+          validationQuery: SELECT 'x'
+          #申请连接的时候检测，如果空闲时间大  于timeBetweenEvictionRunsMillis，执行validationQuery连接是否有效
+          testWhileIdle: true
+          #申请连接时执行validationQuery检测连接是否有效 这个配置会降低性能
+          testOnBorrow: true
+          #归还连接时执行validationQuery检测连接是否有效 这个配置会降低性能
+          testOnReturn: true
+   jpa:
+     show-sql: true
