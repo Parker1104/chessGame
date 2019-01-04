@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "loginSrv", "loginSrv.njsproj", "{AD7D8A71-01F3-486A-98B2-166946DCF4AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD7D8A71-01F3-486A-98B2-166946DCF4AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD7D8A71-01F3-486A-98B2-166946DCF4AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD7D8A71-01F3-486A-98B2-166946DCF4AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD7D8A71-01F3-486A-98B2-166946DCF4AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38302F85-9BF3-466E-9423-C2C22E498F15}
+	EndGlobalSection
+EndGlobal
