@@ -1,4 +1,5 @@
-import http from "../../frm/http";
+import http from "../../frm/net/http";
+import WSManager from "../../frm/net/WSManager";
 
 // Learn TypeScript:
 //  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/typescript.html
@@ -27,7 +28,7 @@ export default class LoginRootNode extends cc.Component {
     // onLoad () {}
 
     start () {
-
+        // WSManager.instance.connect("http://fd73aa68.ngrok.io/ws", 1);
     }
 
     // update (dt) {}
