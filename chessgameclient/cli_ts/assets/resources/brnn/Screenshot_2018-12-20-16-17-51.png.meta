@@ -1,10 +1,9 @@
 {
-  "ver": "2.2.0",
+  "ver": "2.0.0",
   "uuid": "ef55808e-b52f-425b-89aa-4b6e7bf92cf7",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
-  "premultiplyAlpha": false,
   "subMetas": {
     "Screenshot_2018-12-20-16-17-51": {
       "ver": "1.0.3",
