@@ -39,9 +39,9 @@ export default class ViewManager {
             viewCtrl.logicComponet["onEnter"]();
         }
 
-        if (this.viewStack.length) {
-            this.viewStack[this.viewStack.length - 1].hideView();
-        }
+        // if (this.viewStack.length) {
+        //     this.viewStack[this.viewStack.length - 1].hideView();
+        // }
        
         let key = cc.loader["_getReferenceKey"](prefab);
         viewCtrl["_referenceKey"] = key;
