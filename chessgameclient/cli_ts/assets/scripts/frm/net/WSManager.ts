@@ -20,6 +20,7 @@ export default class WSManager {
     heartBeatNum:number = 0;
     // 是否已经开启了心跳检测
     isStartHeartBeat:boolean = false;
+    // 缓存发送数据
     cacheSendCmd:any[] = [];
 
     _OnOpen(event){
@@ -28,10 +29,10 @@ export default class WSManager {
         if(this.cacheSendCmd.length > 0){
             let cache = this.cacheSendCmd.shift();
             // this.sendCmd(cache[0], cache[1], cache[2]);
-            this.sendCmd("hello");
-            console.log("send succ");
             this.cacheSendCmd = [];
         }
+
+        this.sendCmd("hello");
     }
 
     // 开启心跳
@@ -95,9 +96,10 @@ export default class WSManager {
         this.protoType = protoType;
     }
     sendCmd(str:string){
-        if(!this.sock || this.isConnected){
+        if(!this.sock || !this.isConnected){
             return;
         }
+        console.log("str = " + str);
         this.sock.send(str);
     }
     // sendCmd(stype, ctype, body){
